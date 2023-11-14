@@ -24,9 +24,7 @@ html, body,
 /*FILOSOFIA*/
 .seccion.filosofia, .pie-pagina,
 /*PORTAFOLIO*/
-.galeria[data-tipo*="diseño"] .portada:nth-child(3n+2)>.link,
-.galeria[data-tipo*="codigo"] .portada:nth-child(3n+1)>.link,
-.galeria[data-tipo*="variados"] .portada:nth-child(3n+3)>.link,
+
 /*HABILIDADES*/
 .competencia,
 .porcentaje::after,
@@ -42,11 +40,10 @@ html, body,
 .fondo3,
 /*NAV*/
 .etiqueta.btn.menu,
-/*PORTAFOLIO*/
 .galeria[data-tipo*="diseño"] .portada:nth-child(3n+1)>.link,
 .galeria[data-tipo*="codigo"] .portada:nth-child(3n+3)>.link,
 .galeria[data-tipo*="variados"] .portada:nth-child(3n+2)>.link
-{background-color:rgb(30,144,225);} /*AZUL-CLARO*/
+{background-color:rgb(0, 95, 163);} /*AZUL-CLARO*/
 
 .fondo4,
 /*PORTAFOLIO*/
@@ -55,7 +52,7 @@ html, body,
 .galeria[data-tipo*="variados"] .portada:nth-child(3n+1)>.link,
 a.btn, a.btn::before, a.btn::after,
 label.boton, label.boton::before, label.boton::after 
-{background-color:rgb(26,164,201);} /*VERDE-AZUL*/
+{background-image: url('https://cdn.dribbble.com/users/1094383/screenshots/6722275/fiq.png');}
 
 .fondo5,
 .porcentaje i::before
@@ -91,7 +88,7 @@ html, body
 
 .letra2,
 .fondo8
-{color: rgb(0,92,175);} /*AZUL-MEDIO*/
+{color:rgb(129, 196, 255) ;} /*AZUL-MEDIO*/
 
 .letra3, 
 /*FILOSOFIA*/
@@ -106,7 +103,7 @@ html, body
 :link,
 /*FILOSOFIA*/
 .nombre,.pasion, .pasiones
-{color: rgb(0,255,170);} /*VERDE-CYAN*/
+{color: rgb(30, 0, 255);} /*VERDE-CYAN*/
 
 .letra6,
 /*Proyectos*/
@@ -337,7 +334,7 @@ u
 
 .block
 {
-  display: block;
+  display:inline-block;
   width: auto;
 }
 
@@ -355,7 +352,7 @@ u
   letter-spacing: normal;
   white-space: normal;
   zoom: 1;
-  *display: inline;  
+  display:inline-block;  
 }
 
 .oculto
@@ -538,7 +535,7 @@ label.boton.skew-der::before
 
 .btn, .boton
 {
-  cursor: pointer;
+  cursor:grab;
 }
 
 .icono {display: inline-block}
@@ -1620,14 +1617,14 @@ $SECCION $PORTAFOLIO
 
 .galeria .portada:first-child::after
 {
-  display: none;
+  display: inline-block;
 }
 
 .portafolio .galeria
 {
   width: 90%;
   max-width: 60rem;
-  display: block;
+  display:inline-block;
   margin: 3% auto;
   position: relative;
   text-align: center;
@@ -1720,7 +1717,6 @@ $SECCION $PORTAFOLIO
 
 
 /*$IMAGENES RESPONSIVE DE LA GALERIA*/
-
 .galeria[data-tipo*="diseño"] .portada:nth-child(1) .link
 {  background-image: url('http://g3k.co/g3k/img/work/wallpaper.png') }
 
@@ -1733,23 +1729,6 @@ $SECCION $PORTAFOLIO
 
 .galeria[data-tipo*="codigo"] .portada:nth-child(1) .link
 {  background-image: url('http://g3k.co/g3k/img/work/cambio-color.png') }
-
-.galeria[data-tipo*="codigo"] .portada:nth-child(2) .link
-{  background-image: url('http://g3k.co/g3k/img/work/tree-menu.jpg') }
-
-.galeria[data-tipo*="codigo"] .portada:nth-child(3) .link
-{  background-image: url('http://g3k.co/g3k/img/work/animacion-css.jpg') }
-
-
-.galeria[data-tipo*="variados"] .portada:nth-child(1) .link
-{  background-image: url('http://g3k.co/g3k/img/work/cover-animaciones.jpg') }
-
-.galeria[data-tipo*="variados"] .portada:nth-child(2) .link
-{  background-image: url('http://g3k.co/g3k/img/work/cover-ilustraciones.jpg') }
-
-.galeria[data-tipo*="variados"] .portada:nth-child(3) .link
-{  background-image: url('http://g3k.co/g3k/img/work/cover-logo.jpg') }
-
 
 
 /*GALERIA TEXTO*/
@@ -1799,7 +1778,7 @@ $SECCION $PORTAFOLIO
 
 .portada .proyecto
 {
-  display: block;
+  display: inline-block;
 }
 
 .portada .proyecto .titulo
@@ -2198,43 +2177,6 @@ $SECCION $HABILIDADES
   transform: skewX(-30deg);
 }
 
-
-
-/*------------------PORCENTAJES PERSONALIZADOS*/
-/*ADOBE*/
-
-.illustrator + .porcentaje i {  width: 95%; }
-
-.photoshop + .porcentaje i {  width: 95%; }
-
-.fireworks + .porcentaje i {  width: 65%; }
-
-.flash + .porcentaje i {  width: 85%; }
-
-.dreamweaver + .porcentaje i {  width: 50%; }
-
-.premier + .porcentaje i {  width: 65%; }
-
-.indesign + .porcentaje i {  width: 50%; }
-
-.after + .porcentaje i {  width: 35%; }
-
-.audition + .porcentaje i {  width: 35%; }
-
-
-
-/*OTROS*/
-
-.sublime + .porcentaje i {  width: 50%; }
-
-.audacity + .porcentaje i {  width: 35%; }
-
-.inkscape + .porcentaje i {  width: 35%; }
-
-.gimp + .porcentaje i {  width: 35%; }
-
-
-
 /*LENGUAJES*/
 
 .html + .porcentaje i {  width: 95%; }
@@ -2243,32 +2185,9 @@ $SECCION $HABILIDADES
 
 .js + .porcentaje i {  width: 30%; }
 
-.php + .porcentaje i {  width: 20%; }
+.frontend + .porcentaje i {  width: 45%; }
 
-
-
-/*CMS*/
-
-.moodle + .porcentaje i {  width: 80%; }
-
-.wordpress + .porcentaje i {  width: 50%; }
-
-.joomla + .porcentaje i {  width: 25%; }
-
-
-
-/*FRAMEWORKS*/
-
-.bootstrap + .porcentaje i {  width: 80%; }
-
-.boilerplate + .porcentaje i {  width: 70%; }
-
-
-
-/*PREPROCESADORES*/
-
-.stylus + .porcentaje i {  width: 25%; }
-
+.backend + .porcentaje i { width: 35%;}
 
 /*LISTADO OCULTO*/
 
@@ -2320,7 +2239,7 @@ label.aparece-listado
 
 /*AUNQUE*/
 
-.aunque { background-color: rgba(0,92,175,.5) }
+.aunque { background-color: rgba(123, 193, 255, 0.5) }
 
 .aunque::after { content: ':)'; display: inline-block; padding: 0 0.5rem; }
 
@@ -2334,7 +2253,7 @@ $FOOTER
 
 .pie-pagina
 {
-  min-height: 30vh;
+  min-height: 17vh;
 }
 
 .pie-pagina>*
@@ -2687,7 +2606,7 @@ $MEDIA QUERIES
   .encabezado::after { background-size: 35rem 100%, 35rem 100%; height: 25%; }
   .bienvenidos { font-size: 2rem; letter-spacing: 0rem; }
   .g3k { font-size: 1.8rem; line-height: 1.8rem; }
-  .frase-cliche { opacity: 0.9; position: static; display: block; margin: 0 auto 1rem ; -webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0); }
+  .frase-cliche { opacity: 0.9; position: static; display:flexbox; margin: 0 auto 1rem ; -webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0); }
   .frase, .frase::before, .frase::after { background: rgb(0,80,165); }
   .titulo.tipo1::before,
   .titulo.tipo1::after { width: 25%;  background-size: 80% auto; animation-duration: 30s; -webkit-animation-duration: 30s; }
@@ -2704,7 +2623,7 @@ $MEDIA QUERIES
   .seccion .parrafo { max-width: 22rem; }
   .nombre { font-size: 2rem; line-height: 1.6rem; }
   .profesion { font-size: 1.6rem; }
-  .pasion { font-size: 1.8rem; display: block; font-weight: 500; }
+  .pasion { font-size: 1.8rem; display: inline-block; font-weight: 500; }
   .fotog3k { padding: 2%; }  
   .pasiones { max-width: 20rem; }
   .midescripcion.dos .parrafo { max-width: 22rem; }
