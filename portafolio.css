@@ -2113,84 +2113,6 @@ $SECCION $HABILIDADES
 
 
 
-/*PORCENTAJE*/
-
-.porcentaje
-{
-  display: inline-block;
-  width: 50%;
-  width: calc(98% - 8.8rem);
-  position: relative;
-  z-index: 5;
-}
-
-.porcentaje::after
-{
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 0rem;
-  height: 25%;
-  width: 102%;
-  transform: translateY(-50%) skewX(-30deg);
-}
-
-.porcentaje i
-{
-  display: inline-block;
-  text-align: right;  
-  position: relative;
-  z-index: 2;
-  padding-right: 0.3rem;
-  letter-spacing: -0.1rem;
-  font-size: 0.9rem;
-  min-width: 2.5rem;
-}
-
-.porcentaje i::before,
-.porcentaje i:after
-{
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: -1;
-
-}
-
-.porcentaje i:before
-{
-  top: 50%;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
-
-.porcentaje i:after
-{
-  top: 0;
-  right: -0.5rem;
-  height: 100%;
-  width: 3.2rem;
-  transform: skewX(-30deg);
-}
-
-/*LENGUAJES*/
-
-.html + .porcentaje i {  width: 95%; }
-
-.css + .porcentaje i {  width: 95%; }
-
-.js + .porcentaje i {  width: 30%; }
-
-.frontend + .porcentaje i {  width: 45%; }
-
-.backend + .porcentaje i { width: 35%;}
-
-/*LISTADO OCULTO*/
-
 .ctrl.aparece-listado 
 {display: none}
 
@@ -2223,19 +2145,6 @@ label.aparece-listado
   position: static;
   opacity: 1;
 }
-
-.ctrl.aparece-listado:not(:checked) ~ .articulos .oculto .porcentaje i
-{
-   transition: all ease .5s; 
-   max-width: 0%;
-}
-
-.ctrl.aparece-listado:checked ~ .articulos .porcentaje i
-{
-   transition: all ease 2s .3s; 
-   max-width: 100%;
-}
-
 
 /*AUNQUE*/
 
